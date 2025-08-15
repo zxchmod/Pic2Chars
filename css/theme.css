@@ -1,0 +1,15 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --border-color: #888;
+  --drop-bg: #222;
+  --output-bg: #000;
+}
+
+body.light {
+  --bg-color: #f5f5f5;
+  --text-color: #121212;
+  --border-color: #555;
+  --drop-bg: #ddd;
+  --output-bg: #eee;
+}
