@@ -1,0 +1,50 @@
+body {
+  font-family: monospace;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  display: inline-block;
+  text-align: center;
+}
+
+.logo {
+  width: 50px;
+  vertical-align: middle;
+}
+
+#dropZone {
+  border: 2px dashed var(--border-color);
+  padding: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--drop-bg);
+  color: var(--text-color);
+}
+
+#dropZone input[type="file"] {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#asciiOutput {
+  white-space: pre;
+  line-height: 6px;
+  font-size: 8px;
+  background-color: var(--output-bg);
+  color: var(--text-color);
+  padding: 10px;
+  margin-top: 20px;
+  overflow-x: auto;
+  max-width: 90vw;
+  max-height: 80vh;
+  word-break: break-word;
+}
