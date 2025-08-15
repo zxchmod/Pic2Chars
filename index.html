@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pic2Chars</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/icon.png" alt="Pic2Chars" class="logo">
+      <h1>Pic2Chars</h1>
+    </header>
+
+    <section id="uploader">
+      <div id="dropZone">Drag & Drop image or click to select</div>
+      <input type="file" id="upload" accept="image/*">
+    </section>
+
+    <section id="controls">
+      <label for="scale">Scale:</label>
+      <input type="range" id="scale" min="1" max="20" value="5">
+
+      <label for="fontSize">Font Size:</label>
+      <input type="range" id="fontSize" min="6" max="20" value="8">
+
+      <label for="charSet">Character Set:</label>
+      <select id="charSet">
+        <option value="@%#*+=-:. ">Classic</option>
+        <option value="█▓▒░ ">Blocks</option>
+        <option value="$@&B%#*+=-:. ">Detailed</option>
+      </select>
+
+      <label for="colorMode">Color Mode:</label>
+      <select id="colorMode">
+        <option value="colored">Colored</option>
+        <option value="monochrome">Monochrome</option>
+      </select>
+
+      <label for="invert">Invert:</label>
+      <input type="checkbox" id="invert">
+
+      <label for="mirror">Mirror:</label>
+      <select id="mirror">
+        <option value="none">None</option>
+        <option value="horizontal">Horizontal</option>
+        <option value="vertical">Vertical</option>
+      </select>
+
+      <button id="saveTXT">Save as TXT</button>
+      <button id="saveHTML">Save as HTML</button>
+      <button id="toggleTheme">Toggle Theme</button>
+    </section>
+
+    <pre id="asciiOutput"></pre>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
